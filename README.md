@@ -1,4 +1,4 @@
-# Rifted World - Server
+# Rifted World - Server V 0.0.1
 ![Gitter](https://img.shields.io/gitter/room/rifted-world/community?style=plastic)
 ![Discord](https://img.shields.io/discord/793546949626298379?color=7700ff&label=Discord&style=plastic)
 
