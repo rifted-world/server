@@ -8,7 +8,8 @@ This is the standalone frontendclient for the P2P game. Based on HTML5, Javascri
 ## Run the game
 
  1. Download and extract the [GIT-Repo "main"-branche](https://github.com/rifted-world/server/archive/main.zip)
- 2. change to directory "server" and run `node RWServer`
+ 2. change to directory "server" and run ` npm install`
+ 3. run `node RWServer` 
 
 
 
