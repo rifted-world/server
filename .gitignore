@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+#RW-Serverconfig and TLSFiles
+config.json
+.keys/
