@@ -105,4 +105,4 @@ dist
 
 #RW-Serverconfig and TLSFiles
 config.json
-.keys/
+.data/config/keys/
