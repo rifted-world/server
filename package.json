@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rifted-world/server#readme",
   "dependencies": {
+    "process": "^0.11.10",
     "ws": "^7.4.1"
   }
 }

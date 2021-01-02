@@ -28,9 +28,9 @@ function startwebserver() {
   res.sendFile(path.resolve('./public/index.html'));
   });
   */
-  app.use('/style', express.static(__dirname + '/public/style'));
-  app.use('/script', express.static(__dirname + '/public/script'));
-  app.use('/images', express.static(__dirname + '/public/images'));
+  //app.use('/style', express.static(__dirname + '/public/style'));
+  //app.use('/script', express.static(__dirname + '/public/script'));
+  //app.use('/images', express.static(__dirname + '/public/images'));
 
 
 
