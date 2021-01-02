@@ -7,7 +7,7 @@ const compression = require("compression");
 const port = 8085; //API Port
 
 function startwebserver() {
-	const _app_folder = "./public/";
+	const _app_folder = "../Client/";
 	const app = express();
 	app.use(compression());
 
