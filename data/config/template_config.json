@@ -1,0 +1,12 @@
+{
+  "DomainName": "",
+  "Servername": "Devel World",
+  "Servertype": "online",
+  "AllowAllUsers": true,
+  "FrontendPort": 80,
+  "SecureFrontend": true,
+  "SecureFrontendPort": 443,
+  "TLSCertPath": "/path/to/cert.crt",
+  "TLSKeyPath": "/path/to/key.crt",
+  "TLSAuthPath": "/path/to/aut.crt"
+}
