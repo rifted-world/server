@@ -108,3 +108,4 @@ config.json
 .data/config/keys/*
 .bin/*
 /bin/
+/tmp/
