@@ -2,12 +2,12 @@ const WebSocket = require('ws')
  const process = require('process'); 
 //const IPFS = require('./modules/ipfs');
  const express = require('./modules/express');
-const install_IPFS = require('./modules/install_ipfs_bin');
+const IPFS = require('./modules/ipfs');
 
-install_IPFS.install();
+IPFS.start();
 
  process.title = "RiftedWorld - Server 0.0.1";
- 
+
  express.startwebserver();
 
 
