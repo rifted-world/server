@@ -1,7 +1,10 @@
 const https = require('https');
 const fs = require('fs');
+const { CID } = require('ipfs-http-client')
+const IpfsHttpClient = require('ipfs-http-client')
 let ipfs_config = JSON.parse(fs.readFileSync('./modules/ipfs.json'));
 
+let IPFS;
 // ++ Download, unzip and INIT IPFS binary from dist.ipfs.io
 
 function install(){
@@ -67,9 +70,12 @@ function start(){
 }
 function run_ipfs(){
 	console.log("Start IPFS Instance");
-	var child = require('child_process').execFile('./bin/go-ipfs/ipfs.exe', [ 'daemon' ]); 
+	var child = require('child_process').execFile('./bin/go-ipfs/ipfs.exe', [ 'daemon', '--enable-pubsub-experiment' ]); 
 	child.stdout.on('data', function(data) {
 		console.log(data.toString()); 
+		if(data.toString().includes("Daemon is ready")){
+			console.log(">>>>NEXT>>>>")
+		}
 	});
 	child.on('close', function(){
 		console.log("IPFS Instance heruntergefahren");
@@ -82,5 +88,5 @@ function run_ipfs(){
 module.exports = {
 	install,
 	start,
-
+	IPFS
 }

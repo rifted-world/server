@@ -1,8 +1,11 @@
+"use strict";
+
 const WebSocket = require('ws')
  const process = require('process'); 
 //const IPFS = require('./modules/ipfs');
  const express = require('./modules/express');
 const IPFS = require('./modules/ipfs');
+const { strict } = require('assert');
 
 IPFS.start();
 
