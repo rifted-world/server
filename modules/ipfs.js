@@ -98,7 +98,7 @@ function start(){
 }
 function run_ipfs(){
 	console.log("Start IPFS Instance");
-	var child = require('child_process').spawn('./bin/go-ipfs/ipfs.exe', [ 'daemon', '--enable-pubsub-experiment' ]); 
+	var child = require('child_process').spawn('./bin/go-ipfs/'+os.exec_file, [ 'daemon', '--enable-pubsub-experiment' ]); 
 	child.stdout.on('data', function(data) {
 		console.log(data.toString()); 
 		if(data.toString().includes("Daemon is ready")){
