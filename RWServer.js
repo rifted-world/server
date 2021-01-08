@@ -7,17 +7,19 @@ const WebSocket = require('ws')
 const IPFS = require('./modules/ipfs');
 const { strict } = require('assert');
 
-//IPFS.start();
+IPFS.start();
 
  process.title = "RiftedWorld - Server 0.0.1";
 
  express.startwebserver();
 
-const wss = new WebSocket.Server({ port: 8080 })
+const wss = new WebSocket.Server({ port: 446 })
  
 wss.on('connection', ws => {
   ws.on('message', message => {
-    console.log(`Received message => ${message}`)
+    console.log(`Received message => ${message}`);
+    ws.send( `Return  ${message}`)
   })
-  ws.send('Hello! Message From Server!!')
+  ws.send('Hello! Message From Server!!');
+  console.log("WS Ready")
 })
