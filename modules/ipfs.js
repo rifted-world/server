@@ -21,10 +21,10 @@ let versions = {
 }
 switch (process.platform) {
 	case "win32":
-		os=versions.win
+		os=versions.win;
 		break;
 	case "linux":
-		os=versions.linux
+		os=versions.linux;
 		break;
 
 	default:
