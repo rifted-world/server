@@ -3,7 +3,7 @@ const fs = require('fs');
 const { CID } = require('ipfs-http-client')
 const IpfsHttpClient = require('ipfs-http-client')
 let ipfs_config = JSON.parse(fs.readFileSync('./modules/ipfs.json'));
-process.platform === "win32";
+
 
 let os = "";
 
@@ -21,10 +21,10 @@ let versions = {
 }
 switch (process.platform) {
 	case "win32":
-		os=versions[win]
+		os=versions.win
 		break;
 	case "linux":
-		os=versions[win]
+		os=versions.linux
 		break;
 
 	default:
