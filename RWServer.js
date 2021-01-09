@@ -4,12 +4,18 @@ const WebSocket = require('ws')
  const process = require('process'); 
 //const IPFS = require('./modules/ipfs');
  const express = require('./modules/express');
+ const pubsub = require('./modules/ipfs_pubsub_test');
 const IPFS = require('./modules/ipfs');
 const { strict } = require('assert');
 
 IPFS.start();
 
- process.title = "RiftedWorld - Server 0.0.1";
+setTimeout(function(){
+pubsub.start();
+
+},5000)
+
+process.title = "RiftedWorld - Server 0.0.1";
 
  express.startwebserver();
 
