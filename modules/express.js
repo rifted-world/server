@@ -21,16 +21,22 @@ function startwebserver() {
 
 	app.all('*', function (req, res) {
 		res.status(200).sendFile(`/`, {root: _app_folder});
-	});
-
-  /*
+  });
+  
+  app.use(express.static(_app_folder));
+  
+/*
+  app.use('/style', express.static(__dirname + _app_folder+'/style'));
+  app.use('/js', express.static(__dirname + _app_folder+'/js'));
+  app.use('/images', express.static(__dirname + _app_folder+'/images'));
+  app.use('/ajax', express.static(__dirname + _app_folder+'/ajax'));
+  
   app.get('/', function(req, res) {
   res.sendFile(path.resolve('./public/index.html'));
   });
+
   */
-  //app.use('/style', express.static(__dirname + '/public/style'));
-  //app.use('/script', express.static(__dirname + '/public/script'));
-  //app.use('/images', express.static(__dirname + '/public/images'));
+
 
 
 
