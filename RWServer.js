@@ -4,10 +4,10 @@ const WebSocket = require('ws')
  const process = require('process'); 
 //const IPFS = require('./modules/ipfs');
  const express = require('./modules/express');
-const IPFS = require('./modules/ipfs');
+//const IPFS = require('./modules/ipfs');
 const { strict } = require('assert');
 
-IPFS.start();
+//IPFS.start();
 
  process.title = "RiftedWorld - Server 0.0.1";
 
